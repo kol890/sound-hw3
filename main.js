@@ -35,7 +35,8 @@ playButton.addEventListener('click', function() {
         brownNoise = audioCtx.createBufferSource();
         brownNoise.buffer = noiseBuffer;
         brownNoise.loop = true;
-        brownNoise.connect(audioCtx.destination);
+        brownNoise.connect(biquadFilter);
+        biquadFilter.connect(audioCtx.destination);
         brownNoise.start(0);
         isPlaying = true;
         playButton.textContent = 'Stop';
