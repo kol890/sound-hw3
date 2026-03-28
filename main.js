@@ -1,3 +1,4 @@
+// Worked with Matthew in class
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
 // LPF.ar(BrownNoise.ar(), 400
@@ -17,7 +18,7 @@ modgainNode.gain.value = 400;
 // RHPF.ar(..., 0.03, 0.1)
 const RHPF = audioCtx.createBiquadFilter();
 RHPF.type = 'highpass';
-RHPF.Q.value = 1 / 0.03;
+RHPF.Q.value = 1 / 0.025;
 RHPF.frequency.value = 500; // + 500
 
 //output amp 0.1
