@@ -127,3 +127,24 @@ h1 {
 #playButton:active {
   transform: scale(0.98);
 }
+
+#part2Button {
+  font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#part2Button:hover {
+  background-color: #27ae60;
+}
+
+#part2Button:active {
+  transform: scale(0.98);
+}

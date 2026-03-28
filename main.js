@@ -84,3 +84,8 @@ playButton.addEventListener('click', function() {
         playButton.style.backgroundColor = '#3498db';
     }
 });
+
+// Part 2 Button Redirect
+document.getElementById('part2Button').addEventListener('click', function() {
+    window.location.href = 'https://kol890.github.io/HW3-DTMF/src';
+});
